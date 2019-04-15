@@ -11,6 +11,18 @@ const GlobalStyle = createGlobalStyle`
   html {
     box-sizing: border-box;
   }
+
+  *, :after, :before {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #3c414d;
+    font-size: 1.2rem;
+  }
 `;
 
 export default GlobalStyle;
