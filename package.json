@@ -1,0 +1,22 @@
+{
+  "name": "dept-frontend",
+  "version": "1.0.0",
+  "description": "dept agency challenge",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rotimi-babalola/dept-agency.git"
+  },
+  "keywords": [
+    "dept-agency"
+  ],
+  "author": "Rotimi Babalola",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rotimi-babalola/dept-agency/issues"
+  },
+  "homepage": "https://github.com/rotimi-babalola/dept-agency#readme"
+}
