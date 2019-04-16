@@ -3,7 +3,7 @@ const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  entry: './client/src/index.js',
+  entry: './client/src/index.jsx',
   output: {
     path: path.join(__dirname, './client/dist'),
     filename: '[name].chunk.js',
