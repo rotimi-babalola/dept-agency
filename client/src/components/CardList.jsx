@@ -19,11 +19,15 @@ const CardList = ({ items }) => (
 
 CardList.Container = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
-  // grid-template-columns: minmax(100px, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
   grid-row-gap: 30px;
   grid-column-gap: 20px;
   padding: 150px;
+
+  @media (max-width: 700px) {
+    padding: 20px;
+  }
+  
 `;
 
 CardList.defaultProps = {
@@ -31,7 +35,6 @@ CardList.defaultProps = {
 };
 
 CardList.propTypes = {
-  // eslint-disable-next-line react/forbid-prop-types
   items: PropTypes.array,
 };
 
