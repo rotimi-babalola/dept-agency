@@ -2,12 +2,12 @@ import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
-const Card = ({ name, image }) => (
+const Card = ({ name }) => (
   <Card.Container>
     <img style={{ width: '100%' }} src="../../../client/Images/arla.png" alt={name} />
     <Card.Content>
       <p>KEMPEN</p>
-      <h3 style={{ fontFamily: 'Teko', fontWeight: 'normal' }}>A summer island in the Netherlands</h3>
+      <Card.Title>A summer island in the Netherlands</Card.Title>
     </Card.Content>
   </Card.Container>
 );
@@ -20,9 +20,10 @@ Card.Container = styled.div`
   }
 `;
 
-// Card.Subtitle = styled.p`
-
-// `;
+Card.Title = styled.h3`
+  font-family: 'Teko';
+  font-weight: normal;
+`;
 
 Card.Content = styled.div`
   display: flex;
@@ -32,7 +33,6 @@ Card.Content = styled.div`
 `;
 
 Card.propTypes = {
-  image: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
 };
 
