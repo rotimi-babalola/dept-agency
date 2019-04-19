@@ -4,6 +4,7 @@ import { uniqueId } from 'lodash';
 import PropTypes from 'prop-types';
 
 import Card from './Card';
+import Categories from './Categories';
 
 const renderCards = items => (
   items.map(() => (
@@ -13,6 +14,9 @@ const renderCards = items => (
 
 const CardList = ({ items }) => (
   <CardList.Container>
+    <CardList.Categories>
+      <Categories />
+    </CardList.Categories>
     {renderCards(items)}
   </CardList.Container>
 );
@@ -27,7 +31,10 @@ CardList.Container = styled.div`
   @media (max-width: 700px) {
     padding: 20px;
   }
-  
+`;
+
+CardList.Categories = styled.div`
+  grid-column: 1/3;
 `;
 
 CardList.defaultProps = {
